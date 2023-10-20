@@ -7,13 +7,12 @@
 
 class Flyings_squirrel:
     
-    def __init__(self, arms, legs, eyes, tail, fur,fly):
+    def __init__(self, arms, legs, eyes, tail, fur):
         self.arms = arms
         self.legs = legs
         self.eyes = eyes 
         self.tail = tail
         self.fur = fur
-        self.fly = fly
 
     def measurements(self):
         print('Measurements of a flying squirrel')
@@ -31,11 +30,7 @@ class Flyings_squirrel:
             print('Does it have fur?: YES')
         else:
             print('Does it have fur?: NO')
-        if self.fly:
-        	print('Can it fly?: YES')
-        else:
-        	print('Can it fly?: NO')
 
-favorite_animal = Flyings_squirrel(3.1, 2.5, 2, True, True,True)
+favorite_animal = Flyings_squirrel(3.1, 2.5, 2, True, True)
 favorite_animal.measurements()
 		
